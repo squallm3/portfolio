@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mariano Marra's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://kit.fontawesome.com/afb49f5839.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./resources/css/style.css"
 </head>
 <body>
     <header>
-        <nav>
+        <div id="name">
             <h2>Mariano Marra</h2>
+        </div>
+        <nav>
             <ul>
                 <li>About Me</li>
                 <li>Projects</li>
@@ -24,7 +26,7 @@
     </header>
     <main>
         <section id="aboutMe">
-            <h2>About Me</h2>
+            <h2 id="aboutMe">About Me</h2>
             <p>My name is Mariano Marra. I'm 40 years old. I love It. I'm working with computers since i graduated from high school.
                  I started working at a cyber-bar, repairing PCs, installing software and maintaing the network. A couple of years
                   later, I opened my ow PC Shop which was open during 3 years. After that, I got a job in the Goverment. There, i 
@@ -37,7 +39,7 @@
         <section id="projects">
             <h2>Code Academy Projects</h2>
             <article id="first" class="project">
-                <i data-feather="plus" id="icon"></i>
+                <i class="fa-solid fa-plus"></i>
                 <h3>Kelvin Weather</h3>
                 <p>Using JS, I had to convert Kelvin to Celsius and then to Farenheit.</p>
                 <figure>
@@ -45,23 +47,34 @@
                 </figure>
             </article>
             <article id="second" class="project">
-                <i data-feather="plus" id="icon"></i>
+                <i class="fa-solid fa-plus"></i>
                 <h3>Wine Festival Schedule</h3>
                 <p>I had to use tables to made a HTML site.</p>
                 <figure>
                     <img src="resources/img/02Project.jpg" alt="A JS Celsius to Farenheit Converter"/>
                 </figure>
             </article>
+            <article id="third" class="project">
+                <i class="fa-solid fa-plus"></i>
+                <h3>Broadway</h3>
+                <p>In this project, you had to use properties such as display and position to improve the layout of the landing page.</p>
+                <figure>
+                    <img src="resources/img/03Project.jpg" alt="A JS Celsius to Farenheit Converter"/>
+                </figure>
+            </article>
         </section>
         <section id="skills">
-
+            <h2>Skills</h2>
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-js-square"></i>
+            <i class="fa-brands fa-python"></i>
         </section>
     </main>
     <footer>
-
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-solid fa-envelope"></i>
     </footer>
-    <script>
-        feather.replace()
-      </script>
 </body>
 </html>

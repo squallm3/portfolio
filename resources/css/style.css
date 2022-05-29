@@ -1,0 +1,39 @@
+/* Universal Styles */
+
+html {
+    font-family: 'Roboto', 'Calibri', sans-serif;
+}
+
+/* Header & Nav */
+
+header {
+    display: flex;
+    position: fixed;
+}
+
+#name {
+    height: 100px;
+    width: 500px;
+}
+
+#nav {
+    justify-self: flex-end;
+}
+
+li {
+    display: inline;
+}
+
+@media screen and (min-device-width:320px) {
+    h2 {
+        font-size: 5rem;
+    }
+
+    li {
+        font-size: 4rem;
+    }
+}
+
+/* Main Content */
+
+/* Footer */

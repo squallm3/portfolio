@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body>
     <header>
@@ -23,13 +24,34 @@
     </header>
     <main>
         <section id="aboutMe">
-
+            <h2>About Me</h2>
+            <p>My name is Mariano Marra. I'm 40 years old. I love It. I'm working with computers since i graduated from high school.
+                 I started working at a cyber-bar, repairing PCs, installing software and maintaing the network. A couple of years
+                  later, I opened my ow PC Shop which was open during 3 years. After that, I got a job in the Goverment. There, i 
+                had several groups in charge like Level 1 and Level 2 support and Assets Managemen. During the last three years,
+            and besides those three roles, I was working in Proccess Analysis and Automation and some R&D Cloud projects.</p>
         </section>
         <figure id="picture">
-
+            <img src="./resources/img/me.jpg" alt="Picture of Mariano Marra"/>
         </figure>
         <section id="projects">
-
+            <h2>Code Academy Projects</h2>
+            <article id="first" class="project">
+                <i data-feather="plus" id="icon"></i>
+                <h3>Kelvin Weather</h3>
+                <p>Using JS, I had to convert Kelvin to Celsius and then to Farenheit.</p>
+                <figure>
+                    <img src="resources/img/01Project.jpg" alt="A JS Celsius to Farenheit Converter"/>
+                </figure>
+            </article>
+            <article id="second" class="project">
+                <i data-feather="plus" id="icon"></i>
+                <h3>Wine Festival Schedule</h3>
+                <p>I had to use tables to made a HTML site.</p>
+                <figure>
+                    <img src="resources/img/02Project.jpg" alt="A JS Celsius to Farenheit Converter"/>
+                </figure>
+            </article>
         </section>
         <section id="skills">
 
@@ -38,6 +60,8 @@
     <footer>
 
     </footer>
-
+    <script>
+        feather.replace()
+      </script>
 </body>
 </html>

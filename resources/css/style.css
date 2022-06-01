@@ -9,8 +9,7 @@ html {
 
 @media screen and (min-device-width:320px) {
     body {
-        width: 1200px;
-        margin-left: 50px;
+        width: 100%;
         margin-right: 50px;
         margin-top: 0;
     }
@@ -20,7 +19,8 @@ html {
         width: auto;
         position: relative;
         top: 0px;
-        margin: 40px;
+        left: 0px;
+        padding: 40px;
         display: inline;
     }
 
@@ -29,34 +29,46 @@ html {
         margin: 0;
     }
 
-    li {
-        font-size: 4rem;
-    }
-
     nav {
         display: none;
-        justify-self: flex-end;
+        position: fixed;
+        top: 30px;
+        right: 50px;
+        z-index: 2;
+        background-color: whitesmoke;
+        border: medium double #369;
+    }
+
+    nav ul{
+        padding: 75px 60px 0px 60px;
+        margin: 0;
+    }
+
+    nav li {
+        font-size: 4rem;
+        list-style-type: none;
+        margin-bottom: 75px;
     }
 
     header {
-        /* display: flex; */
         position: fixed;
-        /* justify-content: space-around; */
-        background-color: white;
+        background-color: whitesmoke;
         z-index: 1;
+        width: 100%;
     }
 
     #button {
         height: 100px;
         width: 100px;
-        position: relative;
+        position: fixed;
         top: 0px;
         right: 10px;
-        margin: 40px;
+        margin: 22px;
     }
 
     #button i {
         width: 100px;
+        text-align: center;
     }
 }
 
@@ -71,7 +83,8 @@ html {
 @media screen and (min-device-width:320px) {
     main {
         position: relative;
-        top: 215px;
+        top: 160px;
+        margin-left: 50px;
     }
 }
 /* Footer */

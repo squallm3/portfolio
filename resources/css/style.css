@@ -6,8 +6,7 @@ html {
 
 @media screen and (min-device-width:320px) {
     body {
-        margin: 0;
-        /* display: flex; */
+        margin: 0 auto;
         position: absolute;
         width: 100%;
     }
@@ -115,7 +114,10 @@ html {
         margin: 0 auto;
         width: 90%;
         padding: 0 25px;
-        height: 1100px;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     main p {
@@ -155,7 +157,7 @@ html {
 
     #projects figure img {
         width: 100%;
-        border-radius: 50px;
+        border-radius: 10px;
     }
 
     .description {
@@ -176,13 +178,57 @@ html {
         padding: 0 10px;
     }
 }
-/* Footer */
 
-footer {
-    position: relative;
-    top: 10px;
-    margin: 0 auto;
-    width: 100px;
-    padding-bottom: 30px;
-    height: 50px;
+@media screen and (min-device-width:1000px) {
+    main {
+        flex-direction: row;
+        /* padding: 0 5%; */
+        /* margin: 0 15%; */
+        width: 75%;
+    }
+
+    #aboutMe {
+        width: 50%;
+    }
+
+    #picture {
+        width: fit-content;
+        margin: auto auto;
+    }
+
+    #picture img {
+        width: 70%;
+        /* margin: 0 auto; */
+    }
+
+    #projects {
+        width: 100%;
+    }
+
+    #skills {
+        width: 100%;
+    }
+}
+/* Footer */
+@media screen and (min-device-width:320px) {
+    footer {
+        position: relative;
+        top: 72px;
+        margin: 0 auto;
+        width: 100px;
+        padding-bottom: 30px;
+        height: 50px;
+    }
+}
+
+
+/* Form */
+@media screen and (min-device-width:320px) {
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
 }

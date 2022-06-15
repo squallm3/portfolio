@@ -100,9 +100,45 @@ html {
 }
 
 @media screen and (min-device-width:800px) {
-    li {
+
+
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #name {
+        position: static;
+        width: 300px;
+    }
+
+    #button {
+        display: none;
+    }
+
+    nav {
+        display: inline-block;
+        position: static;
+        top: 0px;
+        right: 0;
+        z-index: 0;
+        background-color: whitesmoke;
+        border: none;
+    }
+
+    nav ul{
+        padding: 12.5px;
+        margin: 0;
+    }
+
+    nav li {
         display: inline;
-    }    
+        padding: 0 15px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
 }
 
 /* Main Content */
@@ -182,23 +218,22 @@ html {
 @media screen and (min-device-width:1000px) {
     main {
         flex-direction: row;
-        /* padding: 0 5%; */
-        /* margin: 0 15%; */
         width: 75%;
     }
 
     #aboutMe {
-        width: 50%;
+        width: 60%;
     }
 
     #picture {
         width: fit-content;
-        margin: auto auto;
+        margin: 0 auto;
     }
 
     #picture img {
         width: 70%;
-        /* margin: 0 auto; */
+        margin: 0 auto;
+        display: block;
     }
 
     #projects {
@@ -230,5 +265,11 @@ html {
         flex-direction: column;
         width: 90%;
         margin: 0 auto;
+    }
+}
+
+@media screen and (min-device-width:800px) {
+    form {
+        padding: 0 200px;
     }
 }

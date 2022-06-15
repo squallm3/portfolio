@@ -16,11 +16,12 @@ const broadwayDesc = document.getElementById('broadway');
 //Functions
 
 const hideMenu = () => {
+  if(screen.width < 1000) {
     navMenu.style.display = "none";
+  }
 }
 
 const showMenu = () => {
-    // navMenu.style.display = "block";
     if (navMenu.style.display !== "none") {
         navMenu.style.display = "none";
       } else {
